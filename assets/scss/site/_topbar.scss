@@ -1,0 +1,146 @@
+// Add some whitespace between top bar and content
+.top-bar-container, .tab-bar {
+	margin-bottom: rem-calc(32);
+
+	@media only screen and (max-width: ($topbar-breakpoint)) {
+		.top-bar-left {
+			li.name {
+				padding-left: rem-calc(50);
+
+			}
+
+			li.toggle-topbar a, li.menu-icon {
+				position: absolute;
+				left: 0;
+			}
+
+		}
+
+		.top-bar-right {
+			li.toggle-topbar a, li.menu-icon {
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+}
+
+.top-bar-section ul{
+	margin-top: 30px;
+
+}
+.contain-to-grid .top-bar{
+
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+		background: #2EC8FF;
+		color: $white;
+		width:100px;
+		text-align: center;
+		-webkit-transition: background 0.3s linear;
+			 -moz-transition: background 0.3s linear;
+			 -ms-transition: background 0.3s linear;
+			 -o-transition: background 0.3s linear;
+			 transition: background 0.3s linear;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+	background: #2EC8FF;
+	color: $white;
+	width:100px;
+	text-align: center;
+	-webkit-transition: background 0.3s linear;
+		 -moz-transition: background 0.3s linear;
+		 -ms-transition: background 0.3s linear;
+		 -o-transition: background 0.3s linear;
+		 transition: background 0.3s linear;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button){
+	background: #FFF;
+	color: $black;
+	width:100px;
+	text-align: center;
+	-webkit-transition: background 0.3s linear;
+		 -moz-transition: background 0.3s linear;
+		 -ms-transition: background 0.3s linear;
+		 -o-transition: background 0.3s linear;
+		 transition: background 0.3s linear;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: #FFF;
+	color: $black;
+	width:100px;
+	text-align: center;
+	-webkit-transition: background 0.3s linear;
+		 -moz-transition: background 0.3s linear;
+		 -ms-transition: background 0.3s linear;
+		 -o-transition: background 0.3s linear;
+		 transition: background 0.3s linear;
+}
+
+.top-bar-section{
+	a{
+
+
+	}
+}
+.left-small {
+	border-right: 0;
+}
+
+.right-small {
+	border-left: 0;
+}
+.name {
+
+		margin-top:30px;
+		margin-bottom: 30px;
+		max-height: 100px;
+
+
+}
+.social-media{
+	float: right;
+	margin-top: 15px;
+}
+
+// Switch between the mobile menu (tab-bar) and desktop menu (topbar) based on a custom $topbar-breakpoint value.
+// The $topbar-breakpoint can be edited in _custom-settings.scss.
+
+@media only screen and (min-width: ($topbar-breakpoint + em-calc(1))) {
+  .tab-bar { display: none; }
+}
+
+// Hide the topbar when the screen size is smaller than the topbar breakpoint
+@media only screen and (max-width: $topbar-breakpoint) {
+  body.offcanvas .top-bar { display: none; }
+}
+
+//spicesocialwidget
+
+ul.spicesocialwidget {float:right;}
+ul.spicesocialwidget li {float:left;list-style: none outside none;border:none;}
+ul.spicesocialwidget li a{background-color:transparent;background-image:url('http://4.bp.blogspot.com/-Pe-J5S7YCa0/UdXsJoN7GLI/AAAAAAAAL68/ongZAtcNF1E/s1600/spice-social-gadget-sprite.png');background-repeat:no-repeat;background-size:auto 96px;border:0 none;color:white;direction:ltr;display:block; height:32px;overflow:hidden;text-align:left;text-decoration:none;text-indent:-999em;transition:all 0.2s ease 0s;width:32px}
+.ie7 ul.spicesocialwidget li a, .ie8 ul.spicesocialwidget li a{background-image:url('http://4.bp.blogspot.com/-Pe-J5S7YCa0/UdXsJoN7GLI/AAAAAAAAL68/ongZAtcNF1E/s1600/spice-social-gadget-sprite.png' )}
+ul.spicesocialwidget li.facebook a{ background-position:0 0}
+ul.spicesocialwidget li.flickr a{ background-position:-32px 0}
+ul.spicesocialwidget li.dribbble a{ background-position:-64px 0}
+ul.spicesocialwidget li.googleplus a{ background-position:-96px 0}
+ul.spicesocialwidget li.linkedin a{ background-position:-128px 0}
+ul.spicesocialwidget li.pinterest a{ background-position:-160px 0}
+ul.spicesocialwidget li.rss a{ background-position:-192px 0}
+ul.spicesocialwidget li.skype a{ background-position:-224px 0}
+ul.spicesocialwidget li.twitter a{ background-position:-256px 0}
+ul.spicesocialwidget li.vimeo a{ background-position:-288px 0}
+ul.spicesocialwidget li.youtube a{ background-position:-320px 0}
+ul.spicesocialwidget li.facebook a:hover, #sidebar ul.spicesocialwidget li.facebook a:hover{ background-position:0 -32px}
+ul.spicesocialwidget li.flickr a:hover, #sidebar ul.spicesocialwidget li.flickr a:hover{ background-position:-32px -32px}
+ul.spicesocialwidget li.dribbble a:hover, #sidebar ul.spicesocialwidget li.dribbble a:hover{ background-position:-64px -32px}
+ul.spicesocialwidget li.googleplus a:hover, #sidebar ul.spicesocialwidget li.googleplus a:hover{ background-position:-96px -32px}
+ul.spicesocialwidget li.linkedin a:hover, #sidebar ul.spicesocialwidget li.linkedin a:hover{ background-position:-128px -32px}
+ul.spicesocialwidget li.pinterest a:hover, #sidebar ul.spicesocialwidget li.pinterest a:hover{ background-position:-160px -32px}
+ul.spicesocialwidget li.rss a:hover, #sidebar ul.spicesocialwidget li.rss a:hover{ background-position:-192px -32px}
+ul.spicesocialwidget li.skype a:hover, #sidebar ul.spicesocialwidget li.skype a:hover{ background-position:-224px -32px}
+ul.spicesocialwidget li.twitter a:hover, #sidebar ul.spicesocialwidget li.twitter a:hover{ background-position:-256px -32px}
+ul.spicesocialwidget li.vimeo a:hover, #sidebar ul.spicesocialwidget li.vimeo a:hover{ background-position:-288px -32px}
+ul.spicesocialwidget li.youtube a:hover, #sidebar ul.spicesocialwidget li.youtube a:hover{ background-position:-320px -32px}
