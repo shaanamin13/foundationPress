@@ -9,6 +9,7 @@
 
 	}
 
+
 	@media #{$small-up} {
 		background: url("../images/ilmfinity/primes_def_sunset.png") scroll 0 0 #074E68;
 		background-size: cover;
@@ -118,33 +119,59 @@
 
 		h4{
 				text-transform: uppercase;
-				border-bottom-style: dotted;
-				border-bottom-width: thin;
-				border-bottom-color: $primary-color;
+
+		}
+		.side-content{
+			text-align: left;
+			background-color: #fff;
+			margin: 10px;
+			border-radius: 10px;
+			padding:10px;
 		}
 	}
+	.contact-side{
+		text-align: center;
+		margin-bottom: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: rgba(234, 229, 229, 0.48);
 
+		h4{
+				text-transform: uppercase;
+
+		}
+		.side-content{
+			background-color: #fff;
+			margin: 10px;
+			border-radius: 10px;
+			padding:10px;
+		}
+	}
 
 
  .entry-title{
 
 	 		font-family: fantasy;
 			margin-top: 10px;
-			color: #646D6D;
+			color: #15A1D4;
 			padding-left: 15px;
 			padding-right: 15px;
+			padding-top: 15px;
 			text-transform: uppercase;
-			border-bottom-style: dotted;
-    	border-bottom-width: thin;
-    	border-bottom-color: $primary-color;
+
 
 	}
 	.entry-content{
+		background-color: #fff;
+		margin:10px;
+		padding: 10px;
+		border-radius:10px;
 		padding-left: 15px;
 		padding-right: 15px;
 		color: #4C4444;
 		p{
-			font-family: monospace;
+			font-family: serif;
+			color: #5A5959;
 		}
 	}
 
@@ -158,18 +185,81 @@
 
 
 	}
-.post-footer{
-
-	background-color: $primary-color;
-	height: 35px;
-
-	ul{
-		li{
-			list-style-type: none;
-			display: inline;
-			vertical-align: -webkit-baseline-middle;
-			border-right-style: groove;
-
+	.category-link{
+		a{
+			color: #fff;
+		}
+		a:hover {
+			color: #E6E6E6;
 		}
 	}
+.post-footer{
+
+
+}
+
+.post-meta {
+
+	background: none repeat scroll 0 0 $primary-color;
+
+	line-height: 1;
+
+	margin-bottom: 0;
+
+	overflow: hidden;
+
+}
+
+.post-meta div {
+
+	color: #FFFFFF;
+
+	display: inline-block;
+
+	font-family: montserrat;
+
+	font-size: 12px;
+
+	letter-spacing: 3px;
+
+	line-height: 40px;
+
+}
+
+.post-meta div i {
+
+	border-right: 1px solid rgba(0, 0, 0, 0.06);
+
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+	color: #FFFFFF;
+
+	display: inline-block;
+
+	font-size: 13px;
+
+	height: 40px;
+
+	line-height: 40px;
+
+	text-align: center;
+
+	vertical-align: top;
+
+	width: 50px;
+
+}
+
+.post-meta div span {
+
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+	border-right: 1px solid rgba(0, 0, 0, 0.06);
+
+	display: inline-block;
+
+	margin-right: -3px;
+
+	padding: 0 10px;
+
 }

@@ -1,6 +1,5 @@
 <?php
-/*
-Template Name: Front
+/*Template Name: Front
 */
 get_header(); ?>
 
@@ -29,8 +28,11 @@ get_header(); ?>
 			<div class="marketing">
 
 				<div class="tagline">
+					<?php  $featured_text= simple_fields_value("featured_text"); ?>
+					<?php  $contact_text = simple_fields_value("contact_us_text"); ?>
+					<?php  $contact_button = simple_fields_value("contact_button_text"); ?>
 
-					<h4 class="subheader"><b>In the land of Zenith, something strange is happening…</b></h4>
+					<h4 class="subheader"><b><?php echo $featured_text; ?></b></h4>
 					<a role="button" class="download large button show-for-small-up" href="http://evocreo.com/"><b>Learn More!</b></a>
 					<div class="row">
 						<a href="https://play.google.com/store/apps/details?id=ilmfinity.evocreo.main.android&hl=ens">	<img class="appStore"  src=<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ilmfinity/android-app-on-google-play.jpg></a>
@@ -67,12 +69,26 @@ get_header(); ?>
 				</div>
 
 					<footer class="post-footer">
-						<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-						<p><?php the_tags(); ?></p>
-						<ul>
-							<li>Author: Shaan Amin</li>
-							<li>Date: 11/25/2015</li>
-						</ul>
+						<!-- <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+						<p><?php the_tags(); ?></p> -->
+						<div class="post-meta">
+
+
+
+                             <div><i class="fa fa-pencil"></i><span> <?php the_date(); ?></span></div>
+
+
+
+                             <div><i class="fa fa-user"></i><span> <?php the_author(); ?> </span></div>
+
+
+
+                             <div><i class="fa fa-file"></i><span class = "category-link"><?php the_category(', '); ?></span></div>
+
+
+
+              </div>
+
 					</footer>
 
 			</article>
